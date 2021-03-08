@@ -11,6 +11,19 @@ public class Hotel {
 		return "Hotel [name=" + name + ", weekdayrate=" + weekdayrate + ", weekendrate=" + weekendrate + "]";
 	}
 
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getWeekdayrate() {
+		return weekdayrate;
+
+
 	public String getName() {
 		return name;
 	}
