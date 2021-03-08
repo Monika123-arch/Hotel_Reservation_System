@@ -21,6 +21,15 @@ public class Hotel {
 
 	public int getWeekdayrate() {
 		return weekdayrate;
+
+	@Override
+	public String toString() {
+		return "Hotel [name=" + name + ", rate=" + rate + "]";
+	}
+
+	public void setRate(int rate) {
+		this.rate = rate;
+
 	}
 
 	public void setWeekdayrate(int weekdayrate) {
