@@ -3,7 +3,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HotelReservationServiceTest {
+public class HotelReservationTest {
 	
 		@Test
 		public void givenHotel_whenInvokeAddHotel_shoulBeAbleToAdd() {

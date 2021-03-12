@@ -106,3 +106,4 @@ public class HotelReservationServise {
         return cheaprate_bestestRateing;
     }
 }
+
