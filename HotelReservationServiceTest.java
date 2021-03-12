@@ -16,6 +16,12 @@ public class HotelReservationServiceTest {
         List<Hotel> hotellist = hotelReservationService.getHotels();
         Assert.assertTrue(hotellist.contains(hotel));
     }
+	 @Test
+	    public void given3Hotels_whenInvokeFindCheapestHotel_shouldBeAbleToReturnCheapestHotel() {
+	        HotelReservationServise hotelReservationService = new HotelReservationServise();
+	        Hotel Lakewood = new Hotel("Lakewood",110);
+	        Hotel Bridgewood = new Hotel("Bridgewood",160);
+	        Hotel RidgeWood = new Hotel("Ridgewood",220);
 	
     @Test
     public void given3Hotels_whenInvokeFindCheapestHotel_shouldBeAbleToReturnCheapestHotel() {
@@ -31,7 +37,6 @@ public class HotelReservationServiceTest {
 	        Hotel Lakewood = new Hotel("Lakewood",110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",220,150);
-
 	        hotelReservationService.addHotel(Lakewood);
 	        hotelReservationService.addHotel(Bridgewood);
 	        hotelReservationService.addHotel(RidgeWood);
@@ -48,8 +53,6 @@ public class HotelReservationServiceTest {
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);
-
-
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);
@@ -65,3 +68,4 @@ public class HotelReservationServiceTest {
 	        
 	    }
 }
+
