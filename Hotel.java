@@ -6,7 +6,7 @@ public class Hotel {
     private int rate;
     private int weekdayrate;
     private int weekendrate;
-   
+  
 	@Override
 	public String toString() {
 		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
@@ -50,7 +50,6 @@ public class Hotel {
 
 	public void setName(String name) {
 		this.name = name;
-
 
 	}
 

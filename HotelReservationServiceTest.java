@@ -29,8 +29,6 @@ public class HotelReservationServiceTest {
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);
-
-
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);

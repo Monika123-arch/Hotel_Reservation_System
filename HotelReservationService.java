@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import com.google.common.base.Predicate;
 
@@ -17,8 +18,6 @@ public class HotelReservationServise {
 	    List<Hotel> hotelList = new ArrayList<>();
 	
 	List<Hotel> hotelList = new ArrayList<>();
-
-
     public void addHotel(Hotel hotel) {
         hotelList.add(hotel);
         //System.out.println(hotelList);
@@ -45,7 +44,7 @@ public class HotelReservationServise {
         System.out.println(cheapestRate);
         return cheapestRate;
     }
-
+}
         Hotel cheapestRate =  hotelList.stream().min(Comparator.comparing(Hotel::getWeekendrate)).orElseThrow(NoSuchElementException::new);
         System.out.println(cheapestRate);
         return cheapestRate;
