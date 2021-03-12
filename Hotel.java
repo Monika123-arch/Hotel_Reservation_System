@@ -3,6 +3,16 @@ package com.hotel;
 public class Hotel {
 	
 	private String name;
+    private int rate;
+    private int weekdayrate;
+    private int weekendrate;
+    
+	
+	@Override
+	public String toString() {
+		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
+				+ weekendrate + "]";
+
     private int weekdayrate;
     private int weekendrate;
     
@@ -18,6 +28,7 @@ public class Hotel {
 
 	public void setName(String name) {
 		this.name = name;
+
 	}
 
 	public int getWeekdayrate() {
@@ -57,11 +68,28 @@ public class Hotel {
 		this.weekendrate = weekendrate;
 	}
 
+	public Hotel(String name, int rate, int weekdayrate, int weekendrate) {
+		super();
+		this.name = name;
+		this.rate = rate;
+		this.weekdayrate = weekdayrate;
+		this.weekendrate = weekendrate;
+	}
+
+	public int getRate() {
+		return rate;
+	}
+
+	public void setRate(int rate) {
+		this.rate = rate;
+	}
+
 	public Hotel(String name, int weekdayrate, int weekendrate) {
 		super();
 		this.name = name;
 		this.weekdayrate = weekdayrate;
 		this.weekendrate = weekendrate;
 	}
+
    
 }
