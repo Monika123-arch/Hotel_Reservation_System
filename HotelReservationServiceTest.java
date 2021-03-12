@@ -9,7 +9,8 @@ public class HotelReservationServiceTest {
     public void givenHotel_whenInvokeAddHotel_shoulBeAbleToAdd() {
 		
         HotelReservationServise hotelReservationService = new HotelReservationServise();
-        Hotel hotel = new Hotel("Lakewood",3,110,90);
+        Hotel hotel = new Hotel("Lakewood",3,110,90)
+        Hotel hotel = new Hotel("Lakewood",110,90);
         hotelReservationService.addHotel(hotel);
         List<Hotel> hotellist = hotelReservationService.getHotels();
         Assert.assertTrue(hotellist.contains(hotel));
@@ -18,9 +19,13 @@ public class HotelReservationServiceTest {
     @Test
     public void given3Hotels_whenInvokeFindCheapestHotel_shouldBeAbleToReturnCheapestHotel() {
 	        HotelReservationServise hotelReservationService = new HotelReservationServise();
+
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);
+	        Hotel Lakewood = new Hotel("Lakewood",110,90);
+	        Hotel Bridgewood = new Hotel("Bridgewood",160,50);
+	        Hotel RidgeWood = new Hotel("Ridgewood",220,150);
 	        hotelReservationService.addHotel(Lakewood);
 	        hotelReservationService.addHotel(Bridgewood);
 	        hotelReservationService.addHotel(RidgeWood);
@@ -34,9 +39,13 @@ public class HotelReservationServiceTest {
     @Test
     public void givenHotel_with3Parameters_whenInvokeAddHotel_shoulBeAbleToAdd() {
 	        HotelReservationServise hotelReservationService = new HotelReservationServise();
+
 	        Hotel Lakewood = new Hotel("Lakewood",3,110,90);
 	        Hotel Bridgewood = new Hotel("Bridgewood",4,160,50);
 	        Hotel RidgeWood = new Hotel("Ridgewood",5,220,150);
+	        Hotel Lakewood = new Hotel("Lakewood",110,90);
+	        Hotel Bridgewood = new Hotel("Bridgewood",160,50);
+	        Hotel RidgeWood = new Hotel("Ridgewood",220,150)
 	        hotelReservationService.addHotel(Lakewood);
 	        hotelReservationService.addHotel(Bridgewood);
 	        hotelReservationService.addHotel(RidgeWood);
