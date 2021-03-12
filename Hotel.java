@@ -6,38 +6,23 @@ public class Hotel {
     private int rate;
     private int weekdayrate;
     private int weekendrate;
-  
+    private int rewardweekdayrate;
+    private int rewardweekendrate;
+	
 	@Override
 	public String toString() {
-		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
-				+ weekendrate + "]";
+		return "HotelDetails [ name=" + name + ", rate = " + rate + ", weekdayrate = " + weekdayrate + ", weekendrate = "
+				+ weekendrate + ", rewardweekdayrate = " + rewardweekdayrate + ", rewardweekendrate = " + rewardweekendrate
+				+ " ]";
+
     
     public Hotel(String name, int rate) {
         this.setName(name);
         this.setRate(rate);
     }
 
-	@Override
-	public String toString() {
-		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
-				+ weekendrate + "]";
-    
-	@Override
-	public String toString() {
-		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
-				+ weekendrate + "]";
-
-    private int weekdayrate;
-    private int weekendrate;
-    
-	@Override
-	public String toString() {
-		return "Hotel [name=" + name + ", weekdayrate=" + weekdayrate + ", weekendrate=" + weekendrate + "]";
-	}
-
-
-	public String getName() {
-		return name;
+	public int getRate() {
+		return rate;
 	}
 
 	@Override
@@ -47,15 +32,7 @@ public class Hotel {
 
 	public void setRate(int rate) {
 		this.rate = rate;
-
-	public void setName(String name) {
-		this.name = name;
-
 	}
-
-	public int getWeekdayrate() {
-		return weekdayrate;
-
 
 	public String getName() {
 		return name;
@@ -67,14 +44,6 @@ public class Hotel {
 
 	public int getWeekdayrate() {
 		return weekdayrate;
-
-	@Override
-	public String toString() {
-		return "Hotel [name=" + name + ", rate=" + rate + "]";
-	}
-
-	public void setRate(int rate) {
-		this.rate = rate;
 	}
 
 	public void setWeekdayrate(int weekdayrate) {
@@ -89,12 +58,14 @@ public class Hotel {
 		this.weekendrate = weekendrate;
 	}
 
-	public Hotel(String name, int rate, int weekdayrate, int weekendrate) {
+	public Hotel(String name, int rate, int weekdayrate, int weekendrate, int rewardweekdayrate, int rewardweekendrate) {
 		super();
 		this.name = name;
 		this.rate = rate;
 		this.weekdayrate = weekdayrate;
 		this.weekendrate = weekendrate;
+		this.rewardweekdayrate = rewardweekdayrate;
+		this.rewardweekendrate = rewardweekendrate;
 	}
 
 	public int getRate() {
@@ -104,12 +75,20 @@ public class Hotel {
 	public void setRate(int rate) {
 		this.rate = rate;
 	}
-    
-	public Hotel(String name, int weekdayrate, int weekendrate) {
-		super();
-		this.name = name;
-		this.weekdayrate = weekdayrate;
-		this.weekendrate = weekendrate;
+
+	public int getRewardweekdayrate() {
+		return rewardweekdayrate;
 	}
-   
+
+	public void setRewardweekdayrate(int rewardweekdayrate) {
+		this.rewardweekdayrate = rewardweekdayrate;
+	}
+
+	public int getRewardweekendrate() {
+		return rewardweekendrate;
+	}
+
+	public void setRewardweekendrate(int rewardweekendrate) {
+		this.rewardweekendrate = rewardweekendrate;
+	}
 }
