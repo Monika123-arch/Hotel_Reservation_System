@@ -12,6 +12,11 @@ public class Hotel {
 	public String toString() {
 		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
 				+ weekendrate + "]";
+    
+	@Override
+	public String toString() {
+		return "Hotel [name=" + name + ", rate=" + rate + ", weekdayrate=" + weekdayrate + ", weekendrate="
+				+ weekendrate + "]";
 
     private int weekdayrate;
     private int weekendrate;
@@ -83,13 +88,12 @@ public class Hotel {
 	public void setRate(int rate) {
 		this.rate = rate;
 	}
-
+    
 	public Hotel(String name, int weekdayrate, int weekendrate) {
 		super();
 		this.name = name;
 		this.weekdayrate = weekdayrate;
 		this.weekendrate = weekendrate;
 	}
-
    
 }
