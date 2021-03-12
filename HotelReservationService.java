@@ -18,6 +18,7 @@ public class HotelReservationServise {
 	    List<Hotel> hotelList = new ArrayList<>();
 	
 	List<Hotel> hotelList = new ArrayList<>();
+  
     public void addHotel(Hotel hotel) {
         hotelList.add(hotel);
         //System.out.println(hotelList);
@@ -39,7 +40,7 @@ public class HotelReservationServise {
 
         System.out.println(cheapestRate);
         return cheapestRate;
-    }
+
         Hotel cheapestRate  =  hotelList.stream().max(Comparator.comparing(Hotel::getRate)).orElseThrow(NoSuchElementException::new);
         System.out.println(cheapestRate);
         return cheapestRate;
